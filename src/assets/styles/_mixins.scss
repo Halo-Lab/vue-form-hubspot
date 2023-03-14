@@ -1,0 +1,46 @@
+@mixin font($size: 16px, $lineHeight: 24px, $fontWeight: 400) {
+  font-size: $size;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+%input {
+  font: inherit;
+  flex: 1;
+  padding: 14px 16px;
+  @include font();
+  color: $black;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  pointer-events: auto;
+
+  &::placeholder {
+    @include font();
+    color: $grey;
+  }
+
+  &:hover:enabled {
+    border-color: $lightGrey;
+  }
+
+  &:focus:enabled {
+    border-color: $black;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $lightGrey;
+    background: none;
+  }
+}
+
+%button {
+  border: none;
+  background: none;
+  font: inherit;
+  border-radius: 10px;
+  @include font($fontWeight: 600);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
