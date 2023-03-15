@@ -1,42 +1,6 @@
 # @halo-lab/vue-form-hubspot
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
-or
-npm
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-or
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn build
-or
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-or
-npm run lint
-```
+The package supports integration with form service Hubspot. All you need is either provide `hubspotPortalId` (your Hubspot id) and `hubspotFormId` for your Hubspot form, or submit callback function to the `Form` component.
 
 ### To install the package
 
